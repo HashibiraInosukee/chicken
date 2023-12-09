@@ -1,0 +1,33 @@
+.bg-header {
+    background-color: #D94E28;
+}
+
+.bg-footer {
+    background-color: black;
+}
+
+.bg-search {
+    background-color: #F8F9FA;
+}
+
+.hover-danger:hover {
+    color: #D94E28 !important ;
+    transition: 0.6s ;
+}
+
+.w-thunder {
+    height: 15px;
+}
+
+
+.block {
+  transition: transform 0.3s linear;
+}
+
+.block:hover {
+  transform: rotate(180deg);
+}
+
+.dark-icon :hover {
+    color: #ccc;
+}
