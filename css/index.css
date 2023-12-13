@@ -13,6 +13,7 @@
 .hover-danger:hover {
     color: #D94E28 !important ;
     transition: 0.6s ;
+    cursor: pointer;
 }
 
 .w-thunder {
@@ -33,14 +34,18 @@
 }
 
 .responsive-img {
+    /* position: relative; */
     width: 100%;
     height: auto;
 }
 
 
 .size-modal {
+    margin-top: 12%;
+    margin-left: 0;
     width: 650px;
     height: 300px;
+
 }
 
 .btn-modal {
@@ -52,6 +57,303 @@
     border-radius: 20px;
 }
 
+.btn-hover:hover {
+    background-color:#db4338bd;
+    color: white !important;
+    transition: 0.5s;
+}
+
+.number {
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+}
+
+.intro {
+  display: flex;
+  text-align: center;
+}
+
+.img-outstanding {
+  position: relative;
+}
+
+.outstanding-name {
+  position: absolute;
+  bottom: 12px;
+  left: 20px;
+  width:210px;
+  height: 50px;
+  background-color: #FFF;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.outstanding-name:hover {
+  cursor: pointer;
+  background-color: #D94E28;
+  color: #FFF;
+  transition: 0.5s;
+}
+
+.outstanding-name:hover .none {
+  display: none;
+}
+
+.item-block {
+  display: none !important;
+}
+
+.outstanding-name:hover .item-block {
+  display: block !important;
+  color: #FFF;
+  margin-left: 40%;
+}
+
+.hover-zoom:hover {
+  cursor: pointer;
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1); 
+  transition: 0.4s;
+}
+
+/* background flash sale */
+
+.background-fs {
+ background-image: url(https://bizweb.dktcdn.net/100/499/932/themes/926650/assets/background_flash_sale.jpg?1701335569227);
+  width: 100%;
+  height: 550px;
+  background-size: cover;
+}
+
+.hover-op:hover {
+  opacity: 0.8;
+  transition: .5s;
+}
+
+#clockdiv{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clockdiv > div{
+	border-radius: 3px;
+	background: #D94E28;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #00816A;
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}
+
+.fl-size {
+  width: 320px;
+
+}
+
+.sale {
+  z-index: 10;
+  top: 8px;
+  position: absolute;
+  text-align: center;
+  background-color: #D94E28;
+  width: 70px;
+  height: 30px;
+  border-radius: 0 15px 0 15px;
+}
+
+.heart {
+  z-index: 1;
+  position: absolute;
+  right: 14px;
+  top: 11px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  background-color: #FFF;
+  border-radius: 5px;
+}
+
+.heart-icon {
+  padding-top: 15px;
+  font-size: 25px;
+  color: #000;
+}
+.heart:hover {
+  cursor: pointer;
+  background-color: #D94E28;
+  transition: 0.5s;
+}
+.heart:hover .heart-icon {
+  color: #FFF;
+}
+
+.cart {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  right: 14px;
+  bottom: 120px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  background-color: #FFF;
+  border-radius: 5px;
+
+}
+
+.cart-icon {
+  padding-top: 15px;
+  font-size: 25px;
+  color: #000;
+}
+
+.cart:hover .cart-icon {
+  color: #FFF;
+
+}
+
+.cart:hover {
+  cursor: pointer;
+  background-color: #D94E28;
+  transition: 0.5s;
+}
+
+.eye{
+  display: none;
+  z-index: 1;
+  position: absolute;
+  right: 14px;
+  bottom: 65px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  background-color: #FFF;
+  border-radius: 5px;
+
+}
+
+.eye-icon {
+  padding-top: 15px;
+  font-size: 25px;
+  color: #000;
+}
+
+.eye:hover {
+  cursor: pointer;
+  background-color: #D94E28;
+  transition: 0.5s;
+}
+
+.eye:hover .eye-icon {
+  color: #FFF;
+
+}
+
+.block-icon:hover .cart{
+  display: block !important;
+}
+
+.block-icon:hover .eye{
+  display: block !important;
+}
+
+
+.cart {
+	-webkit-animation: cart 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: cart 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+@-webkit-keyframes cart {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes cart {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.eye {
+	-webkit-animation: eye 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: eye 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+@-webkit-keyframes eye {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes eye {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+
+.item-block {
+	-webkit-animation: item-block 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: item-block 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@-webkit-keyframes item-block {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+@keyframes item-block {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
 
 
 .animate-nav {
@@ -59,18 +361,6 @@
 	        animation: animate-nav 1s linear both;
 }
 
-/* ----------------------------------------------
- * Generated by Animista on 2023-12-9 19:27:32
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation animate-nav
- * ----------------------------------------
- */
 @-webkit-keyframes animate-nav {
   0% {
     -webkit-transform: scale(1) rotateX(0);
@@ -99,3 +389,5 @@
             transform: scale(1) rotateX(-360deg);
   }
 }
+
+
