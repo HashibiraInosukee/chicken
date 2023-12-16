@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="bg-header">
+    <div class="bg-header ">
         <div class="container">
             <img class="img-fluid" src="https://bizweb.dktcdn.net/100/499/932/themes/926650/assets/banner-top.png?1701337508996" alt="">
         </div>
@@ -20,22 +20,37 @@
     <div class="infor">
         <div class="container">
             <div class="row py-2">
-                <div class="col-3">
-                    <i class="fa-solid fa-phone text-danger fs-6"></i>
-                    <a class="text-dark text-decoration-none fw-medium fs-7 hover-danger" type="tel" href="#">0972869321</a>
-                    <i class="fa-solid fa-envelope text-danger ms-2 fs-6"></i>
-                    <a class="text-dark text-decoration-none fw-medium fs-7 hover-danger" href="#">support@lone.vn</a>
+                <div class="col-3 mobile-none d-flex align-items-center">
+                    <i class="fa-solid fa-phone text-danger fs-6 me-2"></i>
+                    <a class="text-dark  fw-medium fs-7 hover-danger" href="tel:0972869321">0972869321</a>
+                    <i class="fa-solid fa-envelope text-danger ms-2 fs-6 me-2"></i>
+                    <a class="text-dark  fw-medium fs-7 hover-danger" href="mailto:Email:support@lone.vn">support@lone.vn</a>
                 </div>
                 <div class="col-5"></div>
-                <div class="col-4 text-end">
-                    <i class="fa-solid fa-language text-danger fs-6"></i>
+                <div class="col-xxl-4 justify-content-end d-flex align-items-center language-position">
+                    <div class="mobile-none ">
+                        <i class="fa-solid fa-language text-danger fs-6"></i>
                     <a class="text-dark text-decoration-none fw-medium fs-7 hover-danger" href="#">
-                        Tiếng Việt 
+                        <span class="hover-block">Tiếng việt</span>
                         <i class="fa-solid fa-chevron-down"></i>
                     </a>
-                      
+
+                    <!-- language -->
+
+                      <div class="language bg-light">
+                        <div class="vietnamese  border-bottom p-1 hover-danger">
+                            <img src="https://bizweb.dktcdn.net/100/499/932/themes/926650/assets/vn.png?1702276260780" alt="">
+                            <span>Tiếng việt</span>
+                        </div>
+                        <div class="english p-1 hover-danger">
+                            <img src="https://bizweb.dktcdn.net/100/499/932/themes/926650/assets/en.png?1702276260780" alt="">
+                            <span>English</span>
+                        </div>
+                      </div>
+                    </div>
+
                     <i class="fa-solid fa-box ms-2 fs-6"></i>
-                    <a class="text-dark text-decoration-none fw-medium fs-7 hover-danger" href="#">Kiểm tra đơn hàng</a>
+                    <a class="text-dark text-decoration-none fw-medium fs-7 hover-danger ms-2" href="#">Kiểm tra đơn hàng</a>
                 </div>
             </div>
         </div>
@@ -46,9 +61,12 @@
 
     <div class="bg-search">
         <div class="container bg-light py-4">
-            <div class="row">
+            <div class="d-flex">
+
                 <div class="col-3">
-                    <img src="https://bizweb.dktcdn.net/100/499/932/themes/926650/assets/logo.png?1701337508996" class="img-fluid" alt="logo">
+                    <a href="#">
+                     <img src="https://bizweb.dktcdn.net/100/499/932/themes/926650/assets/logo.png?1701337508996"  class="img-fluid" alt="logo">
+                    </a>
                 </div>
                 <div class="col-6">
                     <div class="input-group mb-3">
@@ -59,18 +77,28 @@
                 </div>
             </div>
                 <div class="col-3">
-                    <div class="row">
-                        <div class="col-4">
+                    <div class="row position-relative hover-login">
+                        <div class="col-4 mobile-none">
                             <i class="fa-regular fa-user  ps-4 fs-5"></i> <br />
-                            <a class="text-dark text-decoration-none hover-danger fw-medium" href="#">Tài khoản</a>
+                            <a class="text-decoration-none hover-danger text-black fw-medium" href="#">Tài khoản</a>
                         </div>
-                        <div class="col-4">
+                        <!-- acc -->
+                        <div class="position-absolute acc fw-medium bg-light mobile-none">
+                            <div class="login border-bottom p-1">
+                                <a href="login.html" class="text-decoration-none text-black hover-danger">Đăng nhập</a>
+                            </div>
+                            <div class="register p-1">
+                                <a href="register.html" class="text-decoration-none text-black hover-danger">Đăng kí</a>
+                            </div>
+                      </div>
+
+                        <div class="col-xxl-4 mobile-none">
                             <i class="fa-regular fa-heart position-relative ps-4 fs-5">
                                 <span class="position-absolute number top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-1"><span class="visually-hidden">unread messages</span> 0</span>
                             </i> <br>
                             <a class="text-dark text-decoration-none hover-danger fw-medium" href="#">Yêu thích</a> 
                         </div>
-                        <div class="col-4">
+                        <div class="mobile-none col-xxl-4">
                             <i class="fa-solid fa-cart-shopping position-relative ps-4 fs-5">
                                 <span class="position-absolute number start-100 translate-middle badge border border-light rounded-circle bg-danger p-1"><span class="visually-hidden">unread messages</span> 0</span>
                             </i> <br>
@@ -88,7 +116,7 @@
                 <div class="col-11">
                     <a href="#" class=" text-decoration-none fw-bolder text-danger">Trang chủ</a>
                     <a href="#" class="text-dark text-decoration-none fw-bolder hover-danger p-4">Giới thiệu</a>
-                    <a href="#" class="text-dark text-decoration-none fw-bolder hover-danger">Sản phẩm 
+                    <a href="#" class="text-dark text-decoration-none fw-bolder hover-danger product-text">Sản phẩm 
                         <i class="fa-solid fa-caret-down block"></i>
                     </a>
                     <a href="#" class="text-dark text-decoration-none fw-bolder hover-danger p-4">Tin tức</a>
@@ -98,7 +126,7 @@
 
                 </div>
                 <div class="col-1">
-                    <a href="#" class="text-decoration-none fw-bolder text-danger">
+                    <a href="#sale" class="text-decoration-none fw-bolder text-danger">
                         <img src="https://bizweb.dktcdn.net/100/499/932/themes/926650/assets/menu_icon_3.png?1701337508996" class="img-fluid w-thunder" alt="">
                         Hot sale</a>
                 </div>
@@ -143,53 +171,53 @@
             <h2 class="py-5">Danh mục nổi bật</h2>
 
         </div>
-        <div class="container">
-            <div class="owl-carousel ms-1 owl-theme ">
-                    <div class="item" style=" width: 250px;height: auto;">
+        <div class="container ">
+            <div class="owl-carousel ms-1 owl-theme">
+                    <div class="item outstanding-container " style=" width: 250px;height: auto;">
                         <img class="img-outstanding hover-zoom size-outstanding img-fluid" src="https://bizweb.dktcdn.net/thumb/large/100/499/932/collections/bon-tam.jpg?v=1699504371993" alt="" />
                         <div class="outstanding-name d-flex flex-nowrap">
                             <span class="name-quantity fw-medium mx-3">Bồn tắm</span>
-                            <span class="fw-medium none mx-3">Số lượng 5</span>
+                            <span class="fw-medium none mx-3 mgl mgl">Số lượng 5</span>
                             <i class="fa-solid fa-arrow-right item-block"></i>
                         </div>
                 </div>
-                    <div class="item" style=" width: 250px;height: auto;">
+                    <div class="item outstanding-container" style=" width: 250px;height: auto;">
                         <img class="img-outstanding hover-zoom size-outstanding img-fluid" src="https://bizweb.dktcdn.net/thumb/large/100/499/932/collections/bon-cau.jpg?v=1699504384923" alt="" />
                         <div class="outstanding-name d-flex flex-nowrap">
                             <span class="name-quantity fw-medium mx-3">Bồn cầu</span>
-                            <span class="fw-medium none mx-3">Số lượng 5</span>
+                            <span class="fw-medium none mx-3 mgl">Số lượng 2</span>
                             <i class="fa-solid fa-arrow-right item-block"></i>
                         </div>
                 </div>
-                    <div class="item" style=" width: 250px;height: auto;">
+                    <div class="item outstanding-container" style=" width: 250px;height: auto;">
                         <img class="img-outstanding hover-zoom size-outstanding img-fluid" src="https://bizweb.dktcdn.net/thumb/large/100/499/932/collections/sen-tam.jpg?v=1699504399643" alt="" />
                         <div class="outstanding-name d-flex flex-nowrap">
                             <span class="name-quantity fw-medium mx-3">Sen tắm</span>
-                            <span class="fw-medium none mx-3">Số lượng 5</span>
+                            <span class="fw-medium none mx-3 mgl">Số lượng 8</span>
                             <i class="fa-solid fa-arrow-right item-block"></i>
                         </div>
                 </div>
-                    <div class="item" style=" width: 250px;height: auto;">
+                    <div class="item outstanding-container" style=" width: 250px;height: auto;">
                         <img class="img-outstanding hover-zoom size-outstanding img-fluid" src="https://bizweb.dktcdn.net/thumb/large/100/499/932/collections/chau-lavabo.jpg?v=1699504446760" alt="" />
                         <div class="outstanding-name d-flex flex-nowrap">
                             <span class="name-quantity fw-medium mx-3">Tủ chậu</span>
-                            <span class="fw-medium none mx-3">Số lượng 5</span>
+                            <span class="fw-medium none mx-3 mgl">Số lượng 10</span>
                             <i class="fa-solid fa-arrow-right item-block"></i>
                         </div>
                 </div>
-                    <div class="item" style=" width: 250px;height: auto;">
+                    <div class="item outstanding-container" style=" width: 250px;height: auto;">
                         <img class="img-outstanding hover-zoom size-outstanding img-fluid" src="https://bizweb.dktcdn.net/thumb/large/100/499/932/collections/voi-lavabo.jpg?v=1699504435520" alt="" />
                         <div class="outstanding-name d-flex flex-nowrap">
-                            <span class="name-quantity fw-medium mx-3">Vòi Lavabo</span>
-                            <span class="fw-medium none mx-3">Số lượng 5</span>
+                            <span class="name-quantity fw-medium  mx-3">Vòi Lavabo</span>
+                            <span class="fw-medium none mx-3 mgl">Số lượng 15</span>
                             <i class="fa-solid fa-arrow-right item-block"></i>
                         </div>
                 </div>
-                    <div class="item" style=" width: 250px;height: auto;">
+                    <div class="item outstanding-container" style=" width: 250px;height: auto;">
                         <img class="img-outstanding hover-zoom size-outstanding img-fluid" src="https://bizweb.dktcdn.net/thumb/large/100/499/932/collections/guong.jpg?v=1699504456387" alt="" />
                         <div class="outstanding-name d-flex flex-nowrap">
                             <span class="name-quantity fw-medium mx-3">Phụ kiện</span>
-                            <span class="fw-medium none mx-3">Số lượng 5</span>
+                            <span class="fw-medium none mx-3 mgl">Số lượng 4</span>
                             <i class="fa-solid fa-arrow-right item-block"></i>
                         </div>
                 </div>
@@ -197,17 +225,19 @@
         </div>
     </div>
 
+    <!-- intro -->
+
     <div class="intro mt-5 container">
         <div class="row">
-            <div class="col-6">
+            <div class="col-xxl-6">
                 <img class="img-fluid" src="https://bizweb.dktcdn.net/100/499/932/themes/926650/assets/about-image.jpg?1701337508996" alt="">
             </div>
-            <div class=" text-start col-6">
+            <div class=" text-start col-xxl-6">
                 <div class="">
-                    <h5 class="text-uppercase" style="letter-spacing: 2px;">về chúng tôi</h5>
+                    <h5 class="text-uppercase mgt" style="letter-spacing: 2px;">về chúng tôi</h5>
                 </div>
                 <div>
-                    <h2 class="py-3">Tìm hiểu thêm về chúng tôi và lí do tại sao nên chọn chúng tôi</h2>
+                    <h2 class="py-2">Tìm hiểu thêm về chúng tôi và lí do tại sao nên chọn chúng tôi</h2>
                 </div>
                 <div>
                     <span class="fw-medium pt-2">
@@ -238,16 +268,16 @@
 
     <!-- Flash sale -->
 
-    <div class="background-fs  d-flex align-items-center">
+    <div id="sale" class="background-fs  d-xxl-flex align-items-center">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-xxl-3">
                     <h1 class="hover-op">
-                        <a href="#" class="text-light text-decoration-none">
+                        <a href="#" class="text-light text-decoration-none text-shadow">
                             Flash sale
                         </a>
                     </h1>
-                    <span class="text-light fw-medium">Áp dụng trước khi kết thúc chương trình khuyến mãi</span>
+                    <span class="text-light fw-medium text-shadow">Áp dụng trước khi kết thúc chương trình khuyến mãi</span>
                     <!-- Time -->
                     <div id="clockdiv">
                         <div>
@@ -268,7 +298,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3 mt-2 bg-light overflow-hidden fl-size position-relative block-icon">
+                <div id="mobile-item-1" class="col-xxl-3 mt-2 bg-light overflow-hidden fl-size position-relative block-icon">
                     <div class="sale"> 
                         <span class="text-light">-10%</span>
                     </div>
@@ -288,7 +318,7 @@
                     </div>
 
                 </div>
-                <div class="col-3 mt-2 bg-light mx-2 overflow-hidden fl-size position-relative block-icon">
+                <div id="mobile-item-1" class="col-xxl-3 mt-2 bg-light mx-2 overflow-hidden fl-size position-relative block-icon">
                     <div class="sale"> 
                         <span class="text-light">-20%</span>
                     </div>
@@ -307,7 +337,7 @@
                         <span class="fw-medium text-danger">2.250.000₫ <span class="text-black fw-normal text-decoration-line-through ms-4">2.750.000₫</span></span> 
                     </div>
                 </div>
-                <div class="col-3 mt-2 bg-light overflow-hidden fl-size position-relative block-icon">
+                <div id="mobile-item-1" class="col-3 mt-2 bg-light overflow-hidden fl-size position-relative block-icon">
                     <div class="sale"> 
                         <span class="text-light">-50%</span>
                     </div>
@@ -326,10 +356,446 @@
                         <span class="fw-medium text-danger">2.300.000₫ <span class="text-black fw-normal text-decoration-line-through ms-4">4.500.000₫</span></span> 
                     </div>
                 </div>
+
+                <div id="mobile-item" style="width: 310px; margin-left: 40px;">
+                    <div class="col-xxl-3 mt-2 bg-light overflow-hidden position-relative block-icon">
+                        <div class="sale"> 
+                            <span class="text-light">-10%</span>
+                        </div>
+                        <div class="heart">
+                            <i class="fa-regular fa-heart heart-icon"></i>
+                        </div>
+                        <div class="cart">
+                            <i class="fa-solid fa-cart-plus cart-icon"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-regular fa-eye eye-icon"></i>
+                        </div>
+                        <img class=" py-2 hover-zoom  img-fluid"  src="https://bizweb.dktcdn.net/thumb/large/100/499/932/products/o1cn01ygwggu1weuwnygvbc-2214665986277-0-cib.jpg?v=1700061379593" alt="" />
+                        <div class=" mt-2">
+                            <span class="fw-medium hover-danger">Tủ chậu bo tròn kèm tủ gương thông minh</span>
+                            <span class="fw-medium text-danger">9.200.000₫ <span class="text-black fw-normal text-decoration-line-through ms-4">10.200.000₫</span></span> 
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- new products -->
+    <div class="container">
+            <h2 class="py-4">Sản phẩm mới</h2>
+        <div class="row">
+            <div class="col-xxl-3">
+                <div class="col-3 mt-2 bg-light overflow-hidden fl-size position-relative block-icon">
+                    <div class="heart">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                    </div>
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-plus cart-icon"></i>
+                    </div>
+                    <div class="eye">
+                        <i class="fa-regular fa-eye eye-icon"></i>
+                    </div>
+                    <img class=" py-2 hover-zoom size-outstanding img-fluid" src="https://bizweb.dktcdn.net/thumb/large/100/499/932/products/dh-21.jpg?v=1700061821290" alt="">
+                    <div class=" mt-2">
+                        <span class="fw-medium hover-danger">Tủ chậu lavabo phòng tắm kiêm máy giặt</span><br>
+                        <span class="fw-medium text-danger">13.000.000₫</span> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3">
+                <div class="col-3 mt-2 bg-light overflow-hidden fl-size position-relative block-icon">
+                    <div class="sale"> 
+                        <span class="text-light">-14%</span>
+                    </div>
+                    <div class="heart">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                    </div>
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-plus cart-icon"></i>
+                    </div>
+                    <div class="eye">
+                        <i class="fa-regular fa-eye eye-icon"></i>
+                    </div>
+                    <img class=" py-2 hover-zoom size-outstanding img-fluid" src="https://bizweb.dktcdn.net/thumb/large/100/499/932/products/o1cn01oi3pdg1dnadhusego-2215652100261-0-cib.jpg?v=1700061650540" alt="">
+                    <div class=" mt-2">
+                        <span class="fw-medium hover-danger">Tủ chậu lavabo liền khối 2 tầng</span><br>
+                        <span class="fw-medium text-danger">5.590.000₫ <span class="text-black fw-normal text-decoration-line-through ms-4">6.500.000₫</span></span> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3">
+                <div class="col-3 mt-2 bg-light overflow-hidden fl-size position-relative block-icon">
+                    <div class="sale"> 
+                        <span class="text-light">-10%</span>
+                    </div>
+                    <div class="heart">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                    </div>
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-plus cart-icon"></i>
+                    </div>
+                    <div class="eye">
+                        <i class="fa-regular fa-eye eye-icon"></i>
+                    </div>
+                    <img class=" py-2 hover-zoom size-outstanding img-fluid" src="https://bizweb.dktcdn.net/thumb/large/100/499/932/products/o1cn01ygwggu1weuwnygvbc-2214665986277-0-cib.jpg?v=1700061379593" alt="">
+                    <div class=" mt-2">
+                        <span class="fw-medium hover-danger">Tủ chậu bo tròn kèm tủ gương thông minh</span><br>
+                        <span class="fw-medium text-danger">9.200.000₫ <span class="text-black fw-normal text-decoration-line-through ms-4">10.200.000₫</span></span> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3">
+                <div class="col-3 mt-2 bg-light overflow-hidden fl-size position-relative block-icon">
+                    <div class="sale"> 
+                        <span class="text-light">-18%</span>
+                    </div>
+                    <div class="heart">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                    </div>
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-plus cart-icon"></i>
+                    </div>
+                    <div class="eye">
+                        <i class="fa-regular fa-eye eye-icon"></i>
+                    </div>
+                    <img class=" py-2 hover-zoom size-outstanding img-fluid" src="https://bizweb.dktcdn.net/thumb/large/100/499/932/products/img-0980.jpg?v=1700061216217" alt="">
+                    <div class=" mt-2">
+                        <span class="fw-medium hover-danger">Bàn đá đôi chống xướng, bề mặt bóng</span><br>
+                        <span class="fw-medium text-danger">2.250.000₫ <span class="text-black fw-normal text-decoration-line-through ms-4">2.750.000₫</span></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div class="row">
+            <div class="col-xxl-3">
+                <div class="col-xxl-3 mt-2 bg-light overflow-hidden fl-size position-relative block-icon">
+                    <div class="sale"> 
+                        <span class="text-light">-38%</span>
+                    </div>
+                    <div class="heart">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                    </div>
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-plus cart-icon"></i>
+                    </div>
+                    <div class="eye">
+                        <i class="fa-regular fa-eye eye-icon"></i>
+                    </div>
+                    <img class=" py-2 hover-zoom size-outstanding img-fluid" src="https://bizweb.dktcdn.net/thumb/large/100/499/932/products/z4582676500037-8179ab59008c791c338ae71a17154b32.jpg?v=1700060321893" alt="">
+                    <div class=" mt-2">
+                        <span class="fw-medium hover-danger">Sen cây bàn phím đồng mạ crom bóng</span><br>
+                        <span class="fw-medium text-danger">1.650.000₫ <span class="text-black fw-normal text-decoration-line-through ms-4">2.650.000₫</span></span> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3">
+                <div class="col-xxl-3 mt-2 bg-light overflow-hidden fl-size position-relative block-icon">
+                    <div class="sale"> 
+                        <span class="text-light">-49%</span>
+                    </div>
+                    <div class="heart">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                    </div>
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-plus cart-icon"></i>
+                    </div>
+                    <div class="eye">
+                        <i class="fa-regular fa-eye eye-icon"></i>
+                    </div>
+                    <img class=" py-2 hover-zoom size-outstanding img-fluid" src="https://bizweb.dktcdn.net/thumb/large/100/499/932/products/6542-afc83bee98873f4379e158963f64d536-9f4398cd85a141e7ade7111f9be7456d-caaded0a95ef471e96e166c923684594.jpg?v=1700059878317" alt="">
+                    <div class=" mt-2">
+                        <span class="fw-medium hover-danger">Sen cây tắm mạ PVD màu ghi xám</span><br>
+                        <span class="fw-medium text-danger">2.850.000₫ <span class="text-black fw-normal text-decoration-line-through ms-4">5.600.000₫</span></span> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3">
+                <div class="col-xxl-3 mt-2 bg-light overflow-hidden fl-size position-relative block-icon">
+                    <div class="sale"> 
+                        <span class="text-light">-10%</span>
+                    </div>
+                    <div class="heart">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                    </div>
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-plus cart-icon"></i>
+                    </div>
+                    <div class="eye">
+                        <i class="fa-regular fa-eye eye-icon"></i>
+                    </div>
+                    <img class=" py-2 hover-zoom size-outstanding img-fluid" src="https://bizweb.dktcdn.net/thumb/large/100/499/932/products/js-8098-js-8099.jpg?v=1699888073970" alt="">
+                    <div class=" mt-2">
+                        <span class="fw-medium hover-danger">Bồn tắm Massage đặt góc</span><br>
+                        <span class="fw-medium text-danger">50.350.000₫ <span class="text-black fw-normal text-decoration-line-through ms-4">55.950.000₫</span></span> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3">
+                <div class="col-xxl-3 mt-2 bg-light overflow-hidden fl-size position-relative block-icon">
+                    <div class="sale"> 
+                        <span class="text-light">-15%</span>
+                    </div>
+                    <div class="heart">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                    </div>
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-plus cart-icon"></i>
+                    </div>
+                    <div class="eye">
+                        <i class="fa-regular fa-eye eye-icon"></i>
+                    </div>
+                    <img class=" py-2 hover-zoom size-outstanding img-fluid" src="https://bizweb.dktcdn.net/thumb/large/100/499/932/products/m20808-avt.jpg?v=1699887883713" alt="">
+                    <div class=" mt-2">
+                        <span class="fw-medium hover-danger">Bồn tắm đặt nằm sàn tròn</span><br>
+                        <span class="fw-medium text-danger">33.660.000₫ <span class="text-black fw-normal text-decoration-line-through ms-4">39.600.000₫</span></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- add -->
+    <div class="background-add d-flex align-items-center">
+        <div class="container">
+            <h1 class="hover-op mb-5">
+                <a href="#" class="text-light text-decoration-none">
+                    Xây dựng phòng tắm
+                </a>
+            </h1>
+            <span class="text-light fw-medium">Khám phá bộ sưu tập đầy đủ các sản phẩm phòng tắm của Lofi <br> được thiết kế cho ngôi nhà của bạn.</span><br>
+            <button class="mt-5 codepro-btn btn-add codepro-btn-3 hover-border-3" target="blank" title="...">
+                <span class="btn-add-text">Mua ngay</span>
+            </button>
+        </div>
+
+    </div>
+
+    <!-- products -->
+    <div class="container mt-4">
+        <div class="row py-4">
+            <div class="col-6">
+                 <h2>Sản phẩm</h2>
+            </div>
+            <div class="col-6">
+                <div class="row fw-medium">
+                    <div class="col-2 hover-danger">Bồn tắm</div>
+                    <div class="col-2 hover-danger">Bồn cầu</div>
+                    <div class="col-2 hover-danger">Sen tắm</div>
+                    <div class="col-2 hover-danger">Tủ chậu</div>
+                    <div class="col-2 hover-danger">Vòi Lavabo</div>
+                    <div class="col-2 hover-danger">Phụ kiện</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xxl-3">
+                <div class="col-xxl-3 mt-2 bg-light overflow-hidden fl-size position-relative block-icon">
+                    <div class="sale"> 
+                        <span class="text-light">-10%</span>
+                    </div>
+                    <div class="heart">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                    </div>
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-plus cart-icon"></i>
+                    </div>
+                    <div class="eye">
+                        <i class="fa-regular fa-eye eye-icon"></i>
+                    </div>
+                    <img class=" py-2 hover-zoom size-outstanding img-fluid" src="https://bizweb.dktcdn.net/thumb/large/100/499/932/products/js-8098-js-8099.jpg?v=1699888073970" alt="">
+                    <div class=" mt-2">
+                        <span class="fw-medium hover-danger">Bồn tắm Massage đặt góc</span><br>
+                        <span class="fw-medium text-danger">50.350.000₫ <span class="text-black fw-normal text-decoration-line-through ms-4">55.950.000₫</span></span> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="col-3 mt-2 bg-light overflow-hidden fl-size position-relative block-icon">
+                    <div class="sale"> 
+                        <span class="text-light">-15%</span>
+                    </div>
+                    <div class="heart">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                    </div>
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-plus cart-icon"></i>
+                    </div>
+                    <div class="eye">
+                        <i class="fa-regular fa-eye eye-icon"></i>
+                    </div>
+                    <img class=" py-2 hover-zoom size-outstanding img-fluid" src="https://bizweb.dktcdn.net/thumb/large/100/499/932/products/m20808-avt.jpg?v=1699887883713" alt="">
+                    <div class=" mt-2">
+                        <span class="fw-medium hover-danger">Bồn tắm nằm đặt sàn tròn</span><br>
+                        <span class="fw-medium text-danger">33.660.000₫ <span class="text-black fw-normal text-decoration-line-through ms-4">39.600.000₫</span></span> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="col-3 mt-2 bg-light overflow-hidden fl-size position-relative block-icon">
+                    <div class="sale"> 
+                        <span class="text-light">-20%</span>
+                    </div>
+                    <div class="heart">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                    </div>
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-plus cart-icon"></i>
+                    </div>
+                    <div class="eye">
+                        <i class="fa-regular fa-eye eye-icon"></i>
+                    </div>
+                    <img class=" py-2 hover-zoom size-outstanding img-fluid" src="https://bizweb.dktcdn.net/thumb/large/100/499/932/products/o1cn01ygwggu1weuwnygvbc-2214665986277-0-cib.jpg?v=1700061379593" alt="">
+                    <div class=" mt-2">
+                        <span class="fw-medium hover-danger">Bồn tắm nằm đặt sàn Massage 1m8 gồm vòi</span><br>
+                        <span class="fw-medium text-danger">81.520.000₫ <span class="text-black fw-normal text-decoration-line-through ms-4">101.920.000₫</span></span> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="col-3 mt-2 bg-light overflow-hidden fl-size position-relative block-icon">
+                    <div class="sale"> 
+                        <span class="text-light">-19%</span>
+                    </div>
+                    <div class="heart">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                    </div>
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-plus cart-icon"></i>
+                    </div>
+                    <div class="eye">
+                        <i class="fa-regular fa-eye eye-icon"></i>
+                    </div>
+                    <img class=" py-2 hover-zoom size-outstanding img-fluid" src="https://bizweb.dktcdn.net/thumb/large/100/499/932/products/mw8215b-170-ms-1-625f85b7e2c3b.jpg?v=1699887358777" alt="">
+                    <div class=" mt-2">
+                        <span class="fw-medium hover-danger">Bồn tắm nằm đặt sàn Massage 1m69</span><br>
+                        <span class="fw-medium text-danger">41.500.000₫ <span class="text-black fw-normal text-decoration-line-through ms-4">51.000.000₫</span></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div class="row">
+            <div class="col-3">
+                <div class="col-3 mt-2 bg-light overflow-hidden fl-size position-relative block-icon">
+                    <div class="sale"> 
+                        <span class="text-light">-20%</span>
+                    </div>
+                    <div class="heart">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                    </div>
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-plus cart-icon"></i>
+                    </div>
+                    <div class="eye">
+                        <i class="fa-regular fa-eye eye-icon"></i>
+                    </div>
+                    <img class=" py-2 hover-zoom size-outstanding img-fluid" src="https://bizweb.dktcdn.net/thumb/large/100/499/932/products/mw8202-120-avt.jpg?v=1699887057560" alt="">
+                    <div class=" mt-2">
+                        <span class="fw-medium hover-danger">Bồn tắm đặt sàn 1m2</span><br>
+                        <span class="fw-medium text-danger">19.900.000₫ <span class="text-black fw-normal text-decoration-line-through ms-4">24.900.000₫</span></span> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="col-3 mt-2 bg-light overflow-hidden fl-size position-relative block-icon">
+                    <div class="sale"> 
+                        <span class="text-light">-20%</span>
+                    </div>
+                    <div class="heart">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                    </div>
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-plus cart-icon"></i>
+                    </div>
+                    <div class="eye">
+                        <i class="fa-regular fa-eye eye-icon"></i>
+                    </div>
+                    <img class=" py-2 hover-zoom size-outstanding img-fluid" src="https://bizweb.dktcdn.net/thumb/large/100/499/932/products/mw8266-170-ms-avt.jpg?v=1699886915640" alt="">
+                    <div class=" mt-2">
+                        <span class="fw-medium hover-danger">Bồn tắm đặt sàn Massage 1m7</span><br>
+                        <span class="fw-medium text-danger">36.720.000₫ <span class="text-black fw-normal text-decoration-line-through ms-4">45.590.000₫</span></span> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="col-3 mt-2 bg-light overflow-hidden fl-size position-relative block-icon">
+                    <div class="sale"> 
+                        <span class="text-light">-10%</span>
+                    </div>
+                    <div class="heart">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                    </div>
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-plus cart-icon"></i>
+                    </div>
+                    <div class="eye">
+                        <i class="fa-regular fa-eye eye-icon"></i>
+                    </div>
+                    <img class=" py-2 hover-zoom size-outstanding img-fluid" src="https://bizweb.dktcdn.net/thumb/large/100/499/932/products/js-8098-js-8099.jpg?v=1699888073970" alt="">
+                    <div class=" mt-2">
+                        <span class="fw-medium hover-danger">Bồn tắm Massage đặt góc</span><br>
+                        <span class="fw-medium text-danger">50.350.000₫ <span class="text-black fw-normal text-decoration-line-through ms-4">55.950.000₫</span></span> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="col-3 mt-2 bg-light overflow-hidden fl-size position-relative block-icon">
+                    <div class="sale"> 
+                        <span class="text-light">-15%</span>
+                    </div>
+                    <div class="heart">
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                    </div>
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-plus cart-icon"></i>
+                    </div>
+                    <div class="eye">
+                        <i class="fa-regular fa-eye eye-icon"></i>
+                    </div>
+                    <img class=" py-2 hover-zoom size-outstanding img-fluid" src="https://bizweb.dktcdn.net/thumb/large/100/499/932/products/m20808-avt.jpg?v=1699887883713" alt="">
+                    <div class=" mt-2">
+                        <span class="fw-medium hover-danger">Bồn tắm đặt nằm sàn tròn</span><br>
+                        <span class="fw-medium text-danger">33.660.000₫ <span class="text-black fw-normal text-decoration-line-through ms-4">39.600.000₫</span></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div class="mt-5">
+        <div class="container">
+            <h3 class="hover-danger text-center">Theo dõi instagram của chúng tôi</h3>
+            <div class="row mt-5">
+                <div class="col-3 bg-contact position-relative">
+                    <div class="icon-contact position-absolute end-50 top-50">
+                        <i class="fa-brands fa-instagram text-light fs-2"></i>
+                    </div>
+                    <img src="https://images.wsj.net/im-684494?width=1280&size=1" class="img-fluid hover-zoom" alt="">
+                </div>
+                <div class="col-3 bg-contact position-relative">
+                    <div class="icon-contact position-absolute end-50 top-50">
+                        <i class="fa-brands fa-instagram text-light fs-2"></i>
+                    </div>
+                    <img src="https://bizweb.dktcdn.net/thumb/large/100/499/932/themes/926650/assets/instagram_image_1.jpg?1702276260780" class="img-fluid hover-zoom" alt="">
+                </div>
+                <div class="col-3 bg-contact position-relative">
+                    <div class="icon-contact position-absolute end-50 top-50">
+                        <i class="fa-brands fa-instagram text-light fs-2"></i>
+                    </div>
+                    <img src="https://bizweb.dktcdn.net/thumb/large/100/499/932/themes/926650/assets/instagram_image_2.jpg?1702276260780" class="img-fluid hover-zoom" alt="">
+                </div>
+                <div class="col-3 bg-contact position-relative">
+                    <div class="icon-contact position-absolute end-50 top-50">
+                        <i class="fa-brands fa-instagram text-light fs-2"></i>
+                    </div>
+                    <img src="https://bizweb.dktcdn.net/thumb/large/100/499/932/themes/926650/assets/instagram_image_3.jpg?1702276260780" class="img-fluid hover-zoom" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
             <!-- FOOTER -->
             <div class="bg-footer  bg-dark ">
                 <div class="container bg-dark ">
@@ -363,16 +829,17 @@
                             <strong class="text-light"><a class="text-decoration-none text-light hover-danger" href="#">Bảo mật thông tin cá nhân</a></strong> <br />
                         </div>
                         <div class="col-3">
-                            <a class="text-decoration-none text-light dark-icon" href="#"><i class="fa-brands fa-facebook"></i></a>
-                            <a class="text-decoration-none text-light dark-icon" href="#"><i class="fa-brands fa-instagram p-2"></i></a>
-                            <a class="text-decoration-none text-light dark-icon" href="#"><i class="fa-brands fa-twitter"></i></a>
-                            <a class="text-decoration-none text-light dark-icon" href="#"><i class="fa-brands fa-invision p-2"></i></a>
-                            <a class="text-decoration-none text-light dark-icon" href="#"><i class="fa-brands fa-youtube"></i></a><br> <br>
+                            <strong class="text-light">THÔNG TIN LIÊN HỆ</strong> <br><br>
+                            <a class="text-decoration-none text-light dark-icon" href="#"><i class="fa-brands fa-facebook fs-4"></i></a>
+                            <a class="text-decoration-none text-light dark-icon" href="#"><i class="fa-brands fa-instagram p-2 fs-4"></i></a>
+                            <a class="text-decoration-none text-light dark-icon" href="#"><i class="fa-brands fa-twitter fs-4"></i></a>
+                            <a class="text-decoration-none text-light dark-icon" href="#"><i class="fa-brands fa-invision p-2 fs-4"></i></a>
+                            <a class="text-decoration-none text-light dark-icon" href="#"><i class="fa-brands fa-youtube fs-4"></i></a><br> <br>
                             <strong class="text-light">PHƯƠNG THỨC THANH TOÁN</strong> <br><br>
-                            <a class="text-decoration-none text-light dark-icon" href="#"><i class="fa-brands fa-cc-visa"></i></a>
-                            <a class="text-decoration-none text-light dark-icon" href="#"><i class="fa-brands fa-cc-mastercard p-2"></i></a>
-                            <a class="text-decoration-none text-light dark-icon" href="#"><i class="fa-brands fa-cc-jcb"></i></a>
-                            <a class="text-decoration-none text-light dark-icon" href="#"><i class="fa-regular fa-credit-card p-2"></i></a>
+                            <a class="text-decoration-none text-light dark-icon" href="#"><i class="fa-brands fa-cc-visa fs-4"></i></a>
+                            <a class="text-decoration-none text-light dark-icon" href="#"><i class="fa-brands fa-cc-mastercard p-2 fs-4"></i></a>
+                            <a class="text-decoration-none text-light dark-icon" href="#"><i class="fa-brands fa-cc-jcb fs-4"></i></a>
+                            <a class="text-decoration-none text-light dark-icon" href="#"><i class="fa-regular fa-credit-card p-2 fs-4"></i></a>
                         </div>
                     </div>
                 </div>
@@ -382,8 +849,10 @@
                     © Bản quyền thuộc về Lofi Team | Cung cấp bởi <strong class="text-danger">Me</strong>
                 </div>
             </div>
-            
-    </div>
+    <style type="text/css">
+	    *{box-sizing:border-box;margin:0;padding:0}.codepro-btn:active,.codepro-btn:hover,.codepro-btn:focus{outline:0!important;outline-offset:0}.codepro-btn::before,.codepro-btn::after{position:absolute;content:""}.codepro-btn-holder{display:flex;flex-wrap:wrap;justify-content:center;max-width:1000px;margin:10px auto 35px}.codepro-btn{position:relative;display:inline-block;width:auto;height:auto;background-color:transparent;border:none;cursor:pointer;margin:0 25px 15px;min-width:150px}.codepro-btn span{position:relative;display:inline-block;font-size:14px;font-weight:bold;letter-spacing:2px;text-transform:uppercase;top:0;left:0;width:100%;padding:15px 20px;transition:0.3s}.codepro-btn-1::before{background-color:rgb(28,31,30);transition:0.3s ease-out}.codepro-btn-1 span{color:rgb(255,255,255);border:1px solid rgb(28,31,30);transition:0.2s 0.1s}.codepro-btn-1 span:hover{color:rgb(28,31,30);transition:0.2s 0.1s}.codepro-btn.hover-filled-slide-down::before{bottom:0;left:0;right:0;height:100%;width:100%}.codepro-btn.hover-filled-slide-down:hover::before{height:0%}.codepro-btn.hover-filled-slide-up::before{top:0;left:0;right:0;height:100%;width:100%}.codepro-btn.hover-filled-slide-up:hover::before{height:0%}.codepro-btn.hover-filled-slide-left::before{top:0;bottom:0;left:0;height:100%;width:100%}.codepro-btn.hover-filled-slide-left:hover::before{width:0%}.codepro-btn.hover-filled-slide-right::before{top:0;bottom:0;right:0;height:100%;width:100%}.codepro-btn.hover-filled-slide-right:hover::before{width:0%}.codepro-btn.hover-filled-opacity::before{top:0;bottom:0;right:0;height:100%;width:100%;opacity:1}.codepro-btn.hover-filled-opacity:hover::before{opacity:0}.codepro-btn-2::before{background-color:rgb(28,31,30);transition:0.3s ease-out}.codepro-btn-2 span{color:rgb(28,31,30);border:1px solid rgb(28,31,30);transition:0.2s}.codepro-btn-2 span:hover{color:rgb(255,255,255);transition:0.2s 0.1s}.codepro-btn.hover-slide-down::before{top:0;left:0;right:0;height:0%;width:100%}.codepro-btn.hover-slide-down:hover::before{height:100%}.codepro-btn.hover-slide-up::before{bottom:0;left:0;right:0;height:0%;width:100%}.codepro-btn.hover-slide-up:hover::before{height:100%}.codepro-btn.hover-slide-left::before{top:0;bottom:0;right:0;height:100%;width:0%}.codepro-btn.hover-slide-left:hover::before{width:100%}.codepro-btn.hover-slide-right::before{top:0;bottom:0;left:0;height:100%;width:0%}.codepro-btn.hover-slide-right:hover::before{width:100%}.codepro-btn.hover-opacity::before{top:0;bottom:0;right:0;height:100%;width:100%;opacity:0}.codepro-btn.hover-opacity:hover::before{opacity:1}.codepro-btn-3{padding:5px}.codepro-btn-3 span{color:rgb(255,255,255);background-color:rgb(54,56,55)}.codepro-btn-3::before,.codepro-btn-3::after{background:transparent;z-index:2}.codepro-btn.hover-border-1::before,.codepro-btn.hover-border-1::after{width:10%;height:25%;transition:0.35s}.codepro-btn.hover-border-1::before{top:0;left:0;border-left:1px solid rgb(28,31,30);border-top:1px solid rgb(28,31,30)}.codepro-btn.hover-border-1::after{bottom:0;right:0;border-right:1px solid rgb(28,31,30);border-bottom:1px solid rgb(28,31,30)}.codepro-btn.hover-border-1:hover::before,.codepro-btn.hover-border-1:hover::after{width:99%;height:98%}.codepro-btn.hover-border-2::before,.codepro-btn.hover-border-2::after{width:10%;height:25%;transition:0.35s}.codepro-btn.hover-border-2::before{bottom:0;left:0;border-left:1px solid rgb(28,31,30);border-bottom:1px solid rgb(28,31,30)}.codepro-btn.hover-border-2::after{top:0;right:0;border-right:1px solid rgb(28,31,30);border-top:1px solid rgb(28,31,30)}.codepro-btn.hover-border-2:hover::before,.codepro-btn.hover-border-2:hover::after{width:99%;height:99%}.codepro-btn.hover-border-3::before,.codepro-btn.hover-border-3::after{width:0%;height:0%;opacity:0;transition:width 0.2s 0.15s linear,height 0.15s linear,opacity 0s 0.35s}.codepro-btn.hover-border-3::before{top:0;right:0;border-top:1px solid rgb(28,31,30);border-left:1px solid rgb(28,31,30)}.codepro-btn.hover-border-3::after{bottom:0;left:0;border-bottom:1px solid rgb(28,31,30);border-right:1px solid rgb(28,31,30)}.codepro-btn.hover-border-3:hover::before,.codepro-btn.hover-border-3:hover::after{width:100%;height:99%;opacity:1;transition:width 0.2s linear,height 0.15s 0.2s linear,opacity 0s}.codepro-btn.hover-border-4::before,.codepro-btn.hover-border-4::after{width:0%;height:0%;opacity:0;transition:width 0.2s linear,height 0.15s 0.2s ease-out,opacity 0s 0.35s}.codepro-btn.hover-border-4::before{bottom:0;left:-1px;border-top:1px solid rgb(28,31,30);border-left:1px solid rgb(28,31,30)}.codepro-btn.hover-border-4::after{top:0;right:0;border-bottom:1px solid rgb(28,31,30);border-right:1px solid rgb(28,31,30)}.codepro-btn.hover-border-4:hover::before,.codepro-btn.hover-border-4:hover::after{width:100%;height:99%;opacity:1;transition:width 0.2s 0.15s ease-out,height 0.15s ease-in,opacity 0s}.codepro-btn.hover-border-5::before,.codepro-btn.hover-border-5::after{width:0%;height:0%;opacity:0}.codepro-btn.hover-border-5::before{top:0;right:0;border-top:1px solid rgb(28,31,30);border-left:1px solid rgb(28,31,30);transition:width 0.2s 0.5s ease-out,height 0.15s 0.35s linear,opacity 0s 0.7s}.codepro-btn.hover-border-5::after{bottom:0;left:0;border-bottom:1px solid rgb(28,31,30);border-right:1px solid rgb(28,31,30);transition:width 0.2s 0.15s linear,height 0.15s ease-in,opacity 0s 0.35s}.codepro-btn.hover-border-5:hover::before,.codepro-btn.hover-border-5:hover::after{width:100%;height:96%;opacity:1}.codepro-btn.hover-border-5:hover::before{transition:width 0.2s ease-in,height 0.15s 0.2s linear,opacity 0s}.codepro-btn.hover-border-5:hover::after{transition:width 0.2s 0.35s linear,height 0.15s 0.5s ease-out,opacity 0s 0.3s}.codepro-btn-4 span{color:rgb(28,31,30);background-color:rgb(245,245,245)}.codepro-btn-4 span:hover{color:rgb(54,56,55)}.codepro-btn-4::before,.codepro-btn-4::after{width:15%;height:2px;background-color:rgb(54,56,55);z-index:2}.codepro-btn.hover-border-6::before,.codepro-btn.hover-border-6::after{top:0;transition:width 0.2s 0.35s ease-out}.codepro-btn.hover-border-6::before{right:50%}.codepro-btn.hover-border-6::after{left:50%}.codepro-btn.hover-border-6:hover::before,.codepro-btn.hover-border-6:hover::after{width:50%;transition:width 0.2s ease-in}.codepro-btn.hover-border-6 span::before,.codepro-btn.hover-border-6 span::after{width:0%;height:0%;background:transparent;opacity:0;z-index:2;transition:width 0.2s ease-in,height 0.15s 0.2s linear,opacity 0s 0.35s}.codepro-btn.hover-border-6 span::before{top:0;left:0;border-left:2px solid rgb(54,56,55);border-bottom:2px solid rgb(54,56,55)}.codepro-btn.hover-border-6 span::after{top:0;right:0;border-right:2px solid rgb(54,56,55);border-bottom:2px solid rgb(54,56,55)}.codepro-btn.hover-border-6 span:hover::before,.codepro-btn.hover-border-6 span:hover::after{width:50%;height:96%;opacity:1;transition:height 0.2s 0.2s ease-in,width 0.2s 0.4s linear,opacity 0s 0.2s}.codepro-btn.hover-border-7::before,.codepro-btn.hover-border-7::after{bottom:0;transition:width 0.2s 0.35s ease-out}.codepro-btn.hover-border-7::before{right:50%}.codepro-btn.hover-border-7::after{left:50%}.codepro-btn.hover-border-7:hover::before,.codepro-btn.hover-border-7:hover::after{width:50%;transition:width 0.2s ease-in}.codepro-btn.hover-border-7 span::before,.codepro-btn.hover-border-7 span::after{width:0%;height:0%;background:transparent;opacity:0;z-index:2;transition:width 0.2s ease-in,height 0.15s 0.2s linear,opacity 0s 0.35s}.codepro-btn.hover-border-7 span::before{bottom:0;left:0;border-left:2px solid rgb(54,56,55);border-top:2px solid rgb(54,56,55)}.codepro-btn.hover-border-7 span::after{bottom:0;right:0;border-right:2px solid rgb(54,56,55);border-top:2px solid rgb(54,56,55)}.codepro-btn.hover-border-7 span:hover::before,.codepro-btn.hover-border-7 span:hover::after{width:50%;height:96%;opacity:1;transition:height 0.2s 0.2s ease-in,width 0.2s 0.4s linear,opacity 0s 0.2s}.codepro-btn.hover-border-8::before,.codepro-btn.hover-border-8::after{bottom:0;width:15%;transition:width 0.2s 0.35s ease-out}.codepro-btn.hover-border-8::before{right:50%}.codepro-btn.hover-border-8::after{left:50%}.codepro-btn.hover-border-8:hover::before{width:50%;transition:width 0.2s ease-in}.codepro-btn.hover-border-8:hover::after{width:50%;transition:width 0.1s ease-in}.codepro-btn.hover-border-8 span::before,.codepro-btn.hover-border-8 span::after{width:0%;height:0%;bottom:0;background:transparent;opacity:0;z-index:2}.codepro-btn.hover-border-8 span::before{left:0%;border-left:2px solid rgb(54,56,55);transition:height 0.25s ease-in,opacity 0s 0.35s}.codepro-btn.hover-border-8 span:hover::before{height:96%;opacity:1;transition:height 0.25s 0.2s ease-out,opacity 0s 0.2s}.codepro-btn.hover-border-8 span::after{right:0%;border-right:2px solid rgb(54,56,55);border-top:2px solid rgb(54,56,55);transition:width 0.2s ease-in,height 0.15s 0.2s linear,opacity 0s 0.35s}.codepro-btn.hover-border-8 span:hover::after{width:99%;height:96%;opacity:1;transition:height 0.15s 0.1s linear,width 0.2s 0.25s linear,opacity 0s 0.1s}.codepro-btn.hover-border-9::before,.codepro-btn.hover-border-9::after{bottom:0;width:15%;transition:width 0.2s 0.35s ease-out}.codepro-btn.hover-border-9::before{right:50%}.codepro-btn.hover-border-9::after{left:50%}.codepro-btn.hover-border-9:hover::before{width:50%;transition:width 0.1s ease-in}.codepro-btn.hover-border-9:hover::after{width:50%;transition:width 0.2s ease-in}.codepro-btn.hover-border-9 span::before,.codepro-btn.hover-border-9 span::after{width:0%;height:0%;bottom:0;background:transparent;opacity:0;z-index:2}.codepro-btn.hover-border-9 span::after{right:0%;border-right:2px solid rgb(54,56,55);transition:height 0.25s ease-in,opacity 0s 0.35s}.codepro-btn.hover-border-9 span:hover::after{height:96%;opacity:1;transition:height 0.25s 0.2s ease-out,opacity 0s 0.2s}.codepro-btn.hover-border-9 span::before{left:0%;border-left:2px solid rgb(54,56,55);border-top:2px solid rgb(54,56,55);transition:width 0.2s ease-in,height 0.15s 0.2s linear,opacity 0s 0.35s}.codepro-btn.hover-border-9 span:hover::before{width:98.5%;height:96%;opacity:1;transition:height 0.15s 0.1s linear,width 0.2s 0.25s linear,opacity 0s 0.1s}.codepro-btn.hover-border-10::before,.codepro-btn.hover-border-10::after{left:0%;height:30%;width:2px;transition:height 0.2s 0.35s ease-out}.codepro-btn.hover-border-10::before{top:50%}.codepro-btn.hover-border-10::after{bottom:50%}.codepro-btn.hover-border-10:hover::before{height:50%;transition:height 0.2s ease-in}.codepro-btn.hover-border-10:hover::after{height:50%;transition:height 0.1s ease-in}.codepro-btn.hover-border-10 span::before,.codepro-btn.hover-border-10 span::after{width:0%;height:0%;background:transparent;opacity:0;z-index:2}.codepro-btn.hover-border-10 span::after{bottom:0;left:0%;border-bottom:2px solid rgb(54,56,55);transition:width 0.25s ease-in,opacity 0s 0.35s}.codepro-btn.hover-border-10 span:hover::after{width:100%;opacity:1;transition:width 0.25s 0.2s ease-out,opacity 0s 0.2s}.codepro-btn.hover-border-10 span::before{top:0%;left:0%;border-top:2px solid rgb(54,56,55);border-right:2px solid rgb(54,56,55);transition:height 0.15s ease-in,width 0.2s 0.15s linear,opacity 0s 0.35s}.codepro-btn.hover-border-10 span:hover::before{width:98.5%;height:96%;opacity:1;transition:width 0.2s 0.1s linear,height 0.15s 0.3s ease-out,opacity 0s 0.1s}.codepro-btn-5 span{color:rgb(28,31,30);border:2px solid rgb(249,211,27);transition:0.2s}.codepro-btn-5 span:hover{background-color:rgb(245,245,245)}.codepro-btn.hover-border-11::before,.codepro-btn.hover-border-11::after{width:100%;height:2px;background-color:rgb(54,56,55);z-index:2;transition:0.35s}.codepro-btn.hover-border-11::before{top:0;right:0}.codepro-btn.hover-border-11::after{bottom:0;left:0}.codepro-btn.hover-border-11:hover::before,.codepro-btn.hover-border-11:hover::after{width:0%;transition:0.2s 0.2s ease-out}.codepro-btn.hover-border-11 span::before,.codepro-btn.hover-border-11 span::after{width:2px;height:100%;background-color:rgb(54,56,55);z-index:2;transition:0.25s}.codepro-btn.hover-border-11 span::before{bottom:0;right:-2px}.codepro-btn.hover-border-11 span::after{top:0;left:-2px}.codepro-btn.hover-border-11 span:hover::before,.codepro-btn.hover-border-11 span:hover::after{height:0%}
+    </style>           
+</div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/owl.carousel.min.js"></script>
