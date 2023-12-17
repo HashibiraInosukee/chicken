@@ -4,21 +4,40 @@ $(".owl-carousel").owlCarousel({
   dotsSpeed: 1000,
 
   loop: true,
-  margin: 100,
-  nav: false,
+  margin: 10,
+  nav: true,
   autoplay: true,
   responsive: {
     0: {
       items: 1,
     },
+
     600: {
       items: 3,
     },
+
     1000: {
       items: 5,
     },
   },
 });
+
+// $(".owl-carousel").owlCarousel({
+//   loop: true,
+//   margin: 10,
+//   nav: true,
+//   responsive: {
+//     0: {
+//       items: 1,
+//     },
+//     600: {
+//       items: 3,
+//     },
+//     1000: {
+//       items: 5,
+//     },
+//   },
+// });
 
 // time countdown
 function getTimeRemaining(endtime) {
