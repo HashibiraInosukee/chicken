@@ -90,10 +90,10 @@
   font-size: 10px;
 }
 
-.intro {
+/* .intro {
   display: flex;
   text-align: center;
-}
+} */
 
 .img-outstanding {
   position: relative;
@@ -102,9 +102,9 @@
 .outstanding-name {
   position: absolute;
   bottom: 12px;
-  left: 20px;
-  width:210px;
-  height: 50px;
+  width:calc(100% - 20px);
+  padding: 10px;
+  margin: 0 10px;
   background-color: #FFF;
   align-items: center;
   border-radius: 8px;
@@ -129,7 +129,6 @@
 .outstanding-name:hover .item-block {
   display: block !important;
   color: #FFF;
-  margin-left: 40%;
 }
 
 .hover-zoom {
@@ -540,19 +539,7 @@
   .mobile-block {
     display: block !important;
   }
-
-  .outstanding-container{
-    width: 360px !important;
-  }
-
-  .outstanding-name{
-    width: 325px;
-  }
-
-  .mgl{
-    margin-left: 140px !important;
-  }
-
+ 
   .mgt {
     margin-top: 20px;
   }
